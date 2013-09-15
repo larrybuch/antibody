@@ -1,0 +1,6 @@
+development:
+  adapter: postgresql
+  database: antibody_development
+  username: <%= ENV['PG_USER'] %>
+  password: 
+  host: localhost
