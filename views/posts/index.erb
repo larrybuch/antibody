@@ -1,8 +1,11 @@
+<h1>Welcome to Anitbody</h1>
+<p>A simple app to help you track how you feel</p>
+
 <ul>
 <% @posts.each do |post| %>
   <li>
-    <h4><a href="/posts/<%= post.id %>"><%= post.title %></a></h4>
     <p>Created: <%= post.created_at %></p>
+    <h3><a href="/posts/<%= post.id %>"><%= post.title %></a></h3>
   </li>
 <% end %>
 </ul>
