@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require './config/environments' #database config
-require './models/post'         #Post class
+require './models/post'         #Post clas
 
 get "/" do
   @posts = Post.order("created_at DESC")
